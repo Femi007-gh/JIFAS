@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 62px; /* To prevent content hiding behind fixed navbar */
+}
+
+.navbar {
+  background-color: aqua;
+  color: black;
+  height: 62px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Sections inside navbar */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.grass {
+  height: 60px; /* slightly smaller than navbar height */
+  width: 80px;
+  object-fit: contain; /* ensures full image shows */
+}
+
+.integrated {
+  font-size: 18px;
+  color: #2A4A37;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.center-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  padding: 10px 0;
+  border-radius: 2px;
+  top: 100%;
+  left: 0;
+  min-width: 140px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 16px;
+  color: #2A4A37;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2A4A37;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.search-container input {
+  padding: 6px 8px 6px 30px;
+  font-size: 16px;
+  border: 1px solid #2A4A37;
+  border-radius: 4px;
+  outline: none;
+}
+
+.search-container input::placeholder {
+  color: #999;
+}
+
+.profile-pic {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* ✅ Mobile responsiveness */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .left, .center-links, .right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .center-links {
+    margin-top: 10px;
+  }
+
+  .right {
+    flex-direction: row; /* keep search + profile side by side */
+    justify-content: space-between;
+  }
+
+  .search-container {
+    flex: 1;
+  }
+}

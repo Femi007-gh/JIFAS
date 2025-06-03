@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: aqua;
+  color: black;
+  height: 62px;
+  width: 100%;
+}
+
+.grass {
+  height: 62px;
+  width: 80px;
+  margin-left: 40px;
+}
+
+.integrated {
+  margin-left: 125px;
+  margin-top: -60px;
+  font-size: 22px; 
+  color: #2A4A37;
+}
+
+
+.center-links {
+ 
+
+}
+
+ a {
+  color: red;
+  text-decoration: none;
+  font-size: 20px;
+}

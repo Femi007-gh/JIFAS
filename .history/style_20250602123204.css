@@ -1,0 +1,89 @@
+.navbar {
+  background-color: aqua;
+  color: black;
+  height: 62px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* Change justify-content to 'space-between' won't center links.
+     Use 'justify-content: flex-start' instead, and manage spacing with margins */
+  justify-content: flex-start;
+  padding: 0 40px;
+  position: fixed;  /* keep fixed on scroll */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  min-width: 220px; /* keep enough space for logo + text */
+}
+
+/* Center the links container absolutely in the navbar */
+.center-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+  white-space: nowrap; /* prevent wrapping */
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar */
+.center-links::-webkit-scrollbar {
+  display: none;
+}
+.center-links {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 10px;
+  flex-shrink: 0; /* prevent shrinking */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+/* keep dropdown content as is */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  padding: 10px 0;
+  border-radius: 2px;
+  top: 100%;
+  left: 0;
+  min-width: 140px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 16px;
+  color: #2A4A37;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
