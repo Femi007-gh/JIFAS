@@ -1,0 +1,350 @@
+
+/* === Common Navbar and Footer CSS (assumed to already exist and reused) === */
+
+/* === SOYAOIL PAGE === */
+.soyaoil-hero {
+  padding: 50px 20px;
+}
+.soyaoil-hero .hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+.soyaoil-hero .hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+.soyaoil-hero .hero-text h2 {
+  font-size: 28px;
+  margin-top: 80px;
+}
+.soyaoil-hero .hero-text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.soyaoil-hero .info-lists {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+.soyaoil-hero .info-lists h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.soyaoil-hero .info-lists ul {
+  padding-left: 20px;
+}
+.soyaoil-hero .enquiry-btn {
+  background-color: white;
+  color: #004225;
+  border-style: solid;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+}
+.soyaoil-hero .enquiry-btn:hover {
+  background-color: #004225;
+  color: white;
+}
+.soyaoil-hero .enquiry-btn i {
+  margin-right: 8px;
+}
+.soyaoil-hero .hero-img img {
+  max-width: 300px;
+  width: 100%;
+}
+.soyaoil-products {
+  padding: 50px 20px;
+  text-align: center;
+}
+.soyaoil-products h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.soyaoil-products .product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.soyaoil-products .product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 250px;
+  background: #fff;
+  border-radius: 8px;
+}
+.soyaoil-products .product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.soyaoil-products .product-card h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.soyaoil-products .product-card a {
+  text-decoration: none;
+  color: #004225;
+  font-weight: bold;
+}
+
+/* === SOYA FLOUR PAGE === */
+.soyaflour-hero {
+  padding: 50px 20px;
+}
+.soyaflour-hero .hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+.soyaflour-hero .hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+.soyaflour-hero .hero-text h2 {
+  font-size: 28px;
+  margin-top: 80px;
+}
+.soyaflour-hero .hero-text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.soyaflour-hero .info-lists {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+.soyaflour-hero .info-lists h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.soyaflour-hero .info-lists ul {
+  padding-left: 20px;
+}
+.soyaflour-hero .enquiry-btn {
+  background-color: white;
+  color: #004225;
+  border-style: solid;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+}
+.soyaflour-hero .enquiry-btn:hover {
+  background-color: #004225;
+  color: white;
+}
+.soyaflour-hero .enquiry-btn i {
+  margin-right: 8px;
+}
+.soyaflour-hero .hero-img img {
+  max-width: 300px;
+  width: 100%;
+}
+.soyaflour-products {
+  padding: 50px 20px;
+  text-align: center;
+}
+.soyaflour-products h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.soyaflour-products .product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.soyaflour-products .product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 250px;
+  background: #fff;
+  border-radius: 8px;
+}
+.soyaflour-products .product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.soyaflour-products .product-card h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.soyaflour-products .product-card a {
+  text-decoration: none;
+  color: #004225;
+  font-weight: bold;
+}
+
+/* === GSP PAGE === */
+.gsp-hero {
+  padding: 50px 20px;
+}
+.gsp-hero .hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+.gsp-hero .hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+.gsp-hero .hero-text h2 {
+  font-size: 28px;
+  margin-top: 80px;
+}
+.gsp-hero .hero-text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.gsp-hero .info-lists {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+.gsp-hero .info-lists h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.gsp-hero .info-lists ul {
+  padding-left: 20px;
+}
+.gsp-hero .enquiry-btn {
+  background-color: white;
+  color: #004225;
+  border-style: solid;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+}
+.gsp-hero .enquiry-btn:hover {
+  background-color: #004225;
+  color: white;
+}
+.gsp-hero .enquiry-btn i {
+  margin-right: 8px;
+}
+.gsp-hero .hero-img img {
+  max-width: 300px;
+  width: 100%;
+}
+.gsp-products {
+  padding: 50px 20px;
+  text-align: center;
+}
+.gsp-products h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.gsp-products .product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.gsp-products .product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 250px;
+  background: #fff;
+  border-radius: 8px;
+}
+.gsp-products .product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.gsp-products .product-card h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.gsp-products .product-card a {
+  text-decoration: none;
+  color: #004225;
+  font-weight: bold;
+}
+over {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-card a {
+  color: #007B55;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.gallery {
+  width: 100%;
+  margin-top: 62px;
+  padding-top: 2px;
+}
+
+.heading {
+  width: 100%;
+  padding: 20px 20px 20px 120px;
+  box-sizing: border-box;
+}
+
+.heading h1 {
+  white-space: normal;
+}
+
+.heading p {
+  font-size: 22px;
+  white-space: normal;
+}
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-img {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.1);
+}
+
