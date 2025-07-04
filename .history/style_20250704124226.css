@@ -170,6 +170,7 @@ body {
 }
 
 
+
 /* 👤 Profile Image */
 .profile-pic {
   width: 40px;
@@ -207,6 +208,7 @@ body {
     box-shadow: none;
   }
 }
+
 
 .sacks {
   height: 525px;

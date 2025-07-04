@@ -6,7 +6,7 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding-top: 80px; /* Prevent navbar overlap */
+  padding-top: 80px; /* Prevent navbar from overlapping content */
 }
 
 .navbar {
@@ -87,12 +87,12 @@ body {
   left: 0;
   background-color: white;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  min-width: 220px;
+  min-width: 220px; /* Wider */
   z-index: 999;
   flex-direction: column;
   padding: 15px;
   border-radius: 6px;
-  list-style: none;
+  list-style: none; /* ✅ Remove bullets */
   margin: 0;
 }
 
@@ -103,7 +103,7 @@ body {
 
 .dropdown-content li {
   margin-bottom: 6px;
-  list-style: none;
+  list-style: none; /* ✅ Remove bullets */
 }
 
 .dropdown-content li:last-child {
@@ -112,7 +112,7 @@ body {
 
 .dropdown-content a {
   display: block;
-  padding: 12px 20px;
+  padding: 12px 20px; /* More spacing */
   color: #2a4a37;
   white-space: nowrap;
   font-size: 16px;
@@ -139,22 +139,14 @@ body {
   display: flex;
   align-items: center;
   background-color: white;
-  padding: 6px 10px;
-  border: 1px solid grey;
+  padding: 5px 10px;
   border-radius: 4px;
-  transition: box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
-}
-
-/* ✨ WHEN USER CLICKS INSIDE INPUT: Animate entire container */
-.search-container:focus-within {
-  background-color: #e6ffe6;
-  box-shadow: 0 0 12px rgba(0, 200, 0, 0.7);
-  border-color: green;
+  border: 1px solid grey;
 }
 
 .search-icon {
   font-size: 16px;
-  margin-right: 6px;
+  margin-right: 5px;
   color: black;
   cursor: pointer;
 }
@@ -164,11 +156,9 @@ body {
   outline: none;
   font-size: 14px;
   background: transparent;
-  width: 160px;
+  width: 140px;
   color: #333;
-  padding: 4px;
 }
-
 
 /* 👤 Profile Image */
 .profile-pic {
@@ -207,6 +197,7 @@ body {
     box-shadow: none;
   }
 }
+
 
 .sacks {
   height: 525px;

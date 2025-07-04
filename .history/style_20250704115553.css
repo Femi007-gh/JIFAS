@@ -141,15 +141,7 @@ body {
   background-color: white;
   padding: 6px 10px;
   border: 1px solid grey;
-  border-radius: 4px;
-  transition: box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
-}
-
-/* ✨ WHEN USER CLICKS INSIDE INPUT: Animate entire container */
-.search-container:focus-within {
-  background-color: #e6ffe6;
-  box-shadow: 0 0 12px rgba(0, 200, 0, 0.7);
-  border-color: green;
+  border-radius: 4px; /* slightly rounded, not circular */
 }
 
 .search-icon {
@@ -161,13 +153,22 @@ body {
 
 .search-container input {
   border: none;
-  outline: none;
+  background-color: white;
   font-size: 14px;
-  background: transparent;
   width: 160px;
   color: #333;
   padding: 4px;
 }
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+
 
 
 /* 👤 Profile Image */
@@ -207,6 +208,7 @@ body {
     box-shadow: none;
   }
 }
+
 
 .sacks {
   height: 525px;

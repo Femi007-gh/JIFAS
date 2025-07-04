@@ -6,7 +6,7 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding-top: 80px; /* Prevent navbar overlap */
+  padding-top: 80px; /* Space for fixed navbar */
 }
 
 .navbar {
@@ -79,7 +79,6 @@ body {
   color: green;
 }
 
-/* 🔽 Dropdown Styling */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -87,13 +86,11 @@ body {
   left: 0;
   background-color: white;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  min-width: 220px;
+  min-width: 160px;
   z-index: 999;
   flex-direction: column;
-  padding: 15px;
+  padding: 10px;
   border-radius: 6px;
-  list-style: none;
-  margin: 0;
 }
 
 .dropdown:hover .dropdown-content {
@@ -103,7 +100,6 @@ body {
 
 .dropdown-content li {
   margin-bottom: 6px;
-  list-style: none;
 }
 
 .dropdown-content li:last-child {
@@ -112,20 +108,19 @@ body {
 
 .dropdown-content a {
   display: block;
-  padding: 12px 20px;
+  padding: 10px 16px;
   color: #2a4a37;
   white-space: nowrap;
-  font-size: 16px;
+  font-size: 15px;
   border-radius: 4px;
   transition: background-color 0.3s ease, padding-left 0.3s ease;
 }
 
 .dropdown-content a:hover {
   background-color: #f0f0f0;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 
-/* 🔍 Search Section */
 .right-section {
   display: flex;
   align-items: center;
@@ -139,22 +134,19 @@ body {
   display: flex;
   align-items: center;
   background-color: white;
-  padding: 6px 10px;
-  border: 1px solid grey;
+  padding: 5px 10px;
   border-radius: 4px;
-  transition: box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  border: 1px solid grey;
+  transition: box-shadow 0.3s ease;
 }
 
-/* ✨ WHEN USER CLICKS INSIDE INPUT: Animate entire container */
 .search-container:focus-within {
-  background-color: #e6ffe6;
-  box-shadow: 0 0 12px rgba(0, 200, 0, 0.7);
-  border-color: green;
+  box-shadow: 0 0 5px green;
 }
 
 .search-icon {
   font-size: 16px;
-  margin-right: 6px;
+  margin-right: 5px;
   color: black;
   cursor: pointer;
 }
@@ -164,13 +156,17 @@ body {
   outline: none;
   font-size: 14px;
   background: transparent;
-  width: 160px;
+  width: 100px;
+  transition: all 0.3s ease;
   color: #333;
-  padding: 4px;
 }
 
+.search-container input:focus {
+  width: 160px;
+  border-bottom: 2px solid green;
+  background-color: #f5fff5;
+}
 
-/* 👤 Profile Image */
 .profile-pic {
   width: 40px;
   height: 40px;
@@ -179,7 +175,7 @@ body {
   cursor: pointer;
 }
 
-/* 📱 Mobile Responsive */
+/* 🔁 Mobile Responsive */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -207,6 +203,7 @@ body {
     box-shadow: none;
   }
 }
+
 
 .sacks {
   height: 525px;

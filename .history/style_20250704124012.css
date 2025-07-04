@@ -145,13 +145,15 @@ body {
   transition: box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* ✨ WHEN USER CLICKS INSIDE INPUT: Animate entire container */
-.search-container:focus-within {
-  background-color: #e6ffe6;
-  box-shadow: 0 0 12px rgba(0, 200, 0, 0.7);
+/* 🟩 Brighter interactive effect — only when user clicks */
+.search-container input:focus {
+  background-color: #e6ffe6; /* Brighter green tint */
+  box-shadow: 0 0 12px rgba(0, 200, 0, 0.7); /* Brighter glow */
+  border-bottom: 2px solid green;
   border-color: green;
 }
 
+/* Search icon */
 .search-icon {
   font-size: 16px;
   margin-right: 6px;
@@ -159,6 +161,7 @@ body {
   cursor: pointer;
 }
 
+/* Input field */
 .search-container input {
   border: none;
   outline: none;
@@ -167,6 +170,7 @@ body {
   width: 160px;
   color: #333;
   padding: 4px;
+  transition: all 0.3s ease;
 }
 
 
@@ -207,6 +211,7 @@ body {
     box-shadow: none;
   }
 }
+
 
 .sacks {
   height: 525px;

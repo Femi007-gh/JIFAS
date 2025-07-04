@@ -6,7 +6,7 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding-top: 80px; /* Prevent navbar overlap */
+  padding-top: 80px; /* Makes space for fixed navbar */
 }
 
 .navbar {
@@ -79,7 +79,6 @@ body {
   color: green;
 }
 
-/* 🔽 Dropdown Styling */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -87,45 +86,28 @@ body {
   left: 0;
   background-color: white;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  min-width: 220px;
+  min-width: 140px;
   z-index: 999;
   flex-direction: column;
-  padding: 15px;
-  border-radius: 6px;
-  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
 .dropdown:hover .dropdown-content {
   display: flex;
-  flex-direction: column;
-}
-
-.dropdown-content li {
-  margin-bottom: 6px;
-  list-style: none;
-}
-
-.dropdown-content li:last-child {
-  margin-bottom: 0;
 }
 
 .dropdown-content a {
   display: block;
-  padding: 12px 20px;
+  padding: 8px 12px;
   color: #2a4a37;
   white-space: nowrap;
-  font-size: 16px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, padding-left 0.3s ease;
 }
 
 .dropdown-content a:hover {
-  background-color: #f0f0f0;
-  padding-left: 25px;
+  background-color: #ddd;
 }
 
-/* 🔍 Search Section */
 .right-section {
   display: flex;
   align-items: center;
@@ -139,24 +121,15 @@ body {
   display: flex;
   align-items: center;
   background-color: white;
-  padding: 6px 10px;
-  border: 1px solid grey;
+  padding: 5px 10px;
   border-radius: 4px;
-  transition: box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
-}
-
-/* ✨ WHEN USER CLICKS INSIDE INPUT: Animate entire container */
-.search-container:focus-within {
-  background-color: #e6ffe6;
-  box-shadow: 0 0 12px rgba(0, 200, 0, 0.7);
-  border-color: green;
+  border: 1px solid grey;
 }
 
 .search-icon {
   font-size: 16px;
-  margin-right: 6px;
+  margin-right: 5px;
   color: black;
-  cursor: pointer;
 }
 
 .search-container input {
@@ -164,13 +137,9 @@ body {
   outline: none;
   font-size: 14px;
   background: transparent;
-  width: 160px;
-  color: #333;
-  padding: 4px;
+  width: 100px;
 }
 
-
-/* 👤 Profile Image */
 .profile-pic {
   width: 40px;
   height: 40px;
@@ -179,7 +148,7 @@ body {
   cursor: pointer;
 }
 
-/* 📱 Mobile Responsive */
+/* 🔄 Responsive Fix */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -206,6 +175,11 @@ body {
     position: static;
     box-shadow: none;
   }
+}
+
+.image-wrapper {
+  position: relative;
+  margin-top: -100px;
 }
 
 .sacks {
