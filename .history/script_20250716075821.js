@@ -57,6 +57,7 @@ title3.addEventListener("click", () => {
 
 document.getElementById("desc3");
 
+
 const hamburger = document.getElementById("hamburger");
 const closeBtn = document.getElementById("close-btn");
 const navContent = document.getElementById("nav-content");
