@@ -505,19 +505,16 @@ body {
   justify-content: center;
   gap: 10px;
   margin-bottom: 40px;
-  flex-wrap: wrap; 
 }
 
 .gallery-pics {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  aspect-ratio: 15 / 14; /* Optional: keeps similar shape */
+  width: 300px;
+  height: 280px;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 8px;
-  display: block;
 }
+
 .gallery-pics:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -1776,14 +1773,13 @@ body {
   width: 90%;
   max-width: 1000px;
   box-sizing: border-box;
+  height: 346px;
   border-radius: 8px;
   transition: box-shadow 0.3s ease, border-radius 0.3s ease;
-  min-height: 300px;
-  height: auto;
 }
 
 .c-just h1 {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .c-just p {
