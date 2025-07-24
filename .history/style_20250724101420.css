@@ -1,0 +1,30 @@
+/* === RESET & BASE STYLES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* === ROOT COLORS (CUSTOMIZE AS NEEDED) === */
+:root {
+  --primary-green: #4caf50;
+  --light-green: #d4f4dc;
+  --dark-green: #357a38;
+  --white: #fff;
+  --grey: #f5f5f5;
+  --text-dark: #222;
+  --text-muted: #777;
+}
+
+
